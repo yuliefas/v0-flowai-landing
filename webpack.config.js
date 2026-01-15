@@ -8,10 +8,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.[contenthash].js',
     clean: true,
-    // For custom domain (flowai.xyz) or default GitHub Pages domain, use '/'
-    // For GitHub Pages subdomain (username.github.io/repository-name), use '/repository-name/'
-    // Default: '/' works for both default domain and custom domain
-    publicPath: '/',
+    // For custom domain (flowai.xyz), use '/'
+    // For GitHub Pages subdomain (username.github.io/flow-pages), use '/flow-pages/'
+    // Default: '/' for custom domain or local development
+    publicPath: process.env.CUSTOM_DOMAIN === 'true' || !process.env.GITHUB_PAGES ? '/' : '/flow-pages/',
   },
   module: {
     rules: [
