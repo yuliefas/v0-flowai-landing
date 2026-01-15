@@ -1,0 +1,96 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Package manager files
+# Note: package-lock.json (npm) and pnpm-lock.yaml (pnpm) are usually committed
+# Uncomment the following lines if you don't want to commit lock files:
+# package-lock.json
+# pnpm-lock.yaml
+# yarn.lock
+
+# Build output
+dist/
+build/
+*.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache
+.cache/
+.parcel-cache/
+.webpack/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output
+
+# Package manager cache and store
+.npm
+.pnpm-store/
+.pnpm-debug.log*
+node_modules/.pnpm/
+.npmrc.local
+.pnpmfile.cjs
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack' and 'pnpm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env.test
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
