@@ -1,6 +1,6 @@
 # Flow AI Landing Page
 
-Landing page sederhana dengan form registrasi email untuk Flow AI.
+Simple landing page with email registration form for Flow AI.
 
 ## 🚀 Quick Start
 
@@ -12,13 +12,13 @@ pnpm install
 
 ### 2. Setup Email Service
 
-Edit file `src/main.js` dan konfigurasi email service (Formspree/Mailchimp/EmailJS).
+Edit `src/main.js` and configure email service (Formspree/Mailchimp/EmailJS).
 
-**Paling mudah: Gunakan Formspree (gratis)**
-1. Daftar di [formspree.io](https://formspree.io)
-2. Buat form baru
-3. Copy Form ID
-4. Update di `src/main.js`:
+**Easiest: Use Formspree (free)**
+1. Sign up at [formspree.io](https://formspree.io)
+2. Create a new form
+3. Copy the Form ID
+4. Update in `src/main.js`:
    ```javascript
    formspree: {
        enabled: true,
@@ -35,29 +35,29 @@ pnpm run dev
 ### 4. Build & Deploy
 
 ```bash
-# Build untuk production
+# Build for production
 pnpm run build
 
-# Deploy ke GitHub Pages (otomatis via GitHub Actions)
-git push origin main
+# Deploy to GitHub Pages (manual deploy)
+pnpm run deploy
 ```
 
-## 📚 Dokumentasi Lengkap
+## 📚 Complete Documentation
 
-Lihat [SETUP.md](./SETUP.md) untuk panduan lengkap:
+See [SETUP.md](./SETUP.md) for complete guide:
 - Setup email service (Formspree, Mailchimp, EmailJS)
-- Deploy ke GitHub Pages
+- Deploy to GitHub Pages
 - Setup custom domain (flowai.xyz)
-- Alternatif hosting gratis
+- Free hosting alternatives
 
-## 🎨 Fitur
+## 🎨 Features
 
-- ✅ Form registrasi sederhana (Nama & Email)
-- ✅ Integrasi dengan Formspree/Mailchimp/EmailJS
-- ✅ Desain modern dengan Tailwind CSS
+- ✅ Simple registration form (Name & Email)
+- ✅ Integration with Formspree/Mailchimp/EmailJS
+- ✅ Modern design with Tailwind CSS
 - ✅ Mobile responsive
-- ✅ Deploy otomatis ke GitHub Pages
-- ✅ Support custom domain
+- ✅ Automatic deploy to GitHub Pages
+- ✅ Custom domain support
 
 ## 📝 Tech Stack
 
