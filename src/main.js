@@ -21,7 +21,7 @@ const CONFIG = {
     // Option 2: Formspree (free up to 50 submissions/month)
     formspree: {
         enabled: true, // Set to true if using Formspree
-        formId: 'YOUR_FORMSPREE_FORM_ID', // Replace with Form ID from Formspree
+        formId: 'meeeokzy', // Replace with Form ID from Formspree
     },
     
     // Option 3: EmailJS (free tier)
