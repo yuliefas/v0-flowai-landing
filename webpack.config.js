@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -47,6 +48,14 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html',
       inject: 'body',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'src/favicon.ico', to: 'favicon.ico' },
+        { from: 'src/favicon.png', to: 'favicon.png' },
+        { from: 'src/flow-logo.svg', to: 'flow-logo.svg' },
+        { from: 'src/flowai-og.jpg', to: 'flowai-og.jpg' },
+      ],
     }),
   ],
   devServer: {
