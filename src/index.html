@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flow AI - Launch and integrate AI agents across Web2 and Web3">
+    <title>Flow AI - AI Agent Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 w-full bg-white/95 backdrop-blur-lg shadow-sm z-50 transition-all duration-300">
+        <div class="container flex justify-between items-center py-4">
+            <div class="nav-brand">
+                <h2 class="text-2xl font-bold gradient-text">Flow AI</h2>
+            </div>
+            <ul class="nav-menu hidden md:flex list-none gap-8 items-center">
+                <li><a href="#agents" class="text-slate-900 font-medium hover:text-primary transition-colors">Agents</a></li>
+                <li><a href="#models" class="text-slate-900 font-medium hover:text-primary transition-colors">Models</a></li>
+                <li><a href="#tools" class="text-slate-900 font-medium hover:text-primary transition-colors">Tools</a></li>
+                <li><a href="#blog" class="text-slate-900 font-medium hover:text-primary transition-colors">Blog</a></li>
+                <li><a href="#pricing" class="nav-cta btn-primary text-sm py-2 px-6">Sign in</a></li>
+            </ul>
+            <button class="nav-toggle md:hidden flex flex-col gap-1 bg-transparent border-0 cursor-pointer" aria-label="Toggle navigation">
+                <span class="w-6 h-0.5 bg-slate-900 rounded transition-all"></span>
+                <span class="w-6 h-0.5 bg-slate-900 rounded transition-all"></span>
+                <span class="w-6 h-0.5 bg-slate-900 rounded transition-all"></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <ul class="nav-menu md:hidden fixed left-[-100%] top-[70px] flex-col bg-white w-full text-center transition-all duration-300 shadow-lg py-8 gap-4 list-none">
+            <li><a href="#agents" class="text-slate-900 font-medium hover:text-primary transition-colors block py-2">Agents</a></li>
+            <li><a href="#models" class="text-slate-900 font-medium hover:text-primary transition-colors block py-2">Models</a></li>
+            <li><a href="#tools" class="text-slate-900 font-medium hover:text-primary transition-colors block py-2">Tools</a></li>
+            <li><a href="#blog" class="text-slate-900 font-medium hover:text-primary transition-colors block py-2">Blog</a></li>
+            <li><a href="#pricing" class="btn-primary text-sm py-2 px-6 inline-block mt-2">Sign in</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero mt-20 py-24 bg-gradient-hero text-center">
+        <div class="container">
+            <div class="hero-content max-w-4xl mx-auto">
+                <h1 class="hero-title text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 gradient-text">AI Agent Platform</h1>
+                <p class="hero-subtitle text-xl md:text-2xl text-slate-500 mb-10">Launch and integrate AI agents across Web2 and Web3.</p>
+                <div class="hero-buttons flex gap-4 justify-center flex-wrap">
+                    <a href="#agents" class="btn btn-primary">Explore Agents</a>
+                    <a href="#agents" class="btn btn-secondary">Create your agent</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features py-20 bg-white">
+        <div class="container">
+            <div class="features-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card bg-white p-10 rounded-2xl border border-slate-200 hover:-translate-y-1 hover:shadow-xl hover:border-primary transition-all duration-300">
+                    <div class="feature-icon text-5xl mb-4">🤖</div>
+                    <h3 class="text-2xl font-semibold mb-3 text-slate-900">Build Your Agent</h3>
+                    <p class="font-semibold text-slate-900 mb-2">Create agents and enrich them with MCP tools</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Build powerful AI agents enhanced with Model Context Protocol tools for advanced capabilities</p>
+                </div>
+                <div class="feature-card bg-white p-10 rounded-2xl border border-slate-200 hover:-translate-y-1 hover:shadow-xl hover:border-primary transition-all duration-300">
+                    <div class="feature-icon text-5xl mb-4">📊</div>
+                    <h3 class="text-2xl font-semibold mb-3 text-slate-900">Integration Ecosystem</h3>
+                    <p class="font-semibold text-slate-900 mb-2">Ingest data from multiple sources</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Connect social media, web3, and web2 data sources into a unified ecosystem explorer with RAG capabilities</p>
+                </div>
+                <div class="feature-card bg-white p-10 rounded-2xl border border-slate-200 hover:-translate-y-1 hover:shadow-xl hover:border-primary transition-all duration-300">
+                    <div class="feature-icon text-5xl mb-4">💡</div>
+                    <h3 class="text-2xl font-semibold mb-3 text-slate-900">Collection of insights</h3>
+                    <p class="font-semibold text-slate-900 mb-2">Create workflows and dashboards</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Build automated workflows to render interactive dashboards and extract meaningful insights</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners/Integrations -->
+    <section class="partners py-12 bg-slate-50 border-t border-b border-slate-200">
+        <div class="container">
+            <div class="partners-grid flex justify-center items-center flex-wrap gap-12">
+                <div class="partner-item text-slate-500 font-semibold text-lg opacity-70 hover:opacity-100 hover:text-primary transition-all">Apechain</div>
+                <div class="partner-item text-slate-500 font-semibold text-lg opacity-70 hover:opacity-100 hover:text-primary transition-all">Apify</div>
+                <div class="partner-item text-slate-500 font-semibold text-lg opacity-70 hover:opacity-100 hover:text-primary transition-all">Arbitrum</div>
+                <div class="partner-item text-slate-500 font-semibold text-lg opacity-70 hover:opacity-100 hover:text-primary transition-all">Polygon</div>
+                <div class="partner-item text-slate-500 font-semibold text-lg opacity-70 hover:opacity-100 hover:text-primary transition-all">Sentient</div>
+                <div class="partner-item text-slate-500 font-semibold text-lg opacity-70 hover:opacity-100 hover:text-primary transition-all">Uniswap</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works py-20 bg-white text-center">
+        <div class="container">
+            <h2 class="section-title">HOW IT WORKS</h2>
+            <h3 class="section-heading">From Agent to Insights</h3>
+            <p class="section-subtitle">Easily create your own AI agent, link it to trusted data sources, and watch it generate real-time insights and analytics automatically.</p>
+            
+            <div class="steps-container flex justify-center items-center gap-8 flex-wrap mt-12">
+                <div class="step-card flex-1 min-w-[250px] max-w-[300px] bg-slate-50 p-10 rounded-2xl text-center border-2 border-slate-200 hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                    <div class="step-number text-xs font-bold uppercase tracking-wider text-primary mb-4">STEP ONE</div>
+                    <h3 class="text-2xl font-semibold mb-6 text-slate-900">Create an AI Agent</h3>
+                    <div class="step-icon text-5xl">🚀</div>
+                </div>
+                <div class="step-arrow text-4xl text-slate-500 font-light hidden md:block">→</div>
+                <div class="step-card flex-1 min-w-[250px] max-w-[300px] bg-slate-50 p-10 rounded-2xl text-center border-2 border-slate-200 hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                    <div class="step-number text-xs font-bold uppercase tracking-wider text-primary mb-4">STEP TWO</div>
+                    <h3 class="text-2xl font-semibold mb-6 text-slate-900">Connect your data sources</h3>
+                    <div class="step-icon text-5xl">🔗</div>
+                </div>
+                <div class="step-arrow text-4xl text-slate-500 font-light hidden md:block">→</div>
+                <div class="step-card flex-1 min-w-[250px] max-w-[300px] bg-slate-50 p-10 rounded-2xl text-center border-2 border-slate-200 hover:border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                    <div class="step-number text-xs font-bold uppercase tracking-wider text-primary mb-4">STEP THREE</div>
+                    <h3 class="text-2xl font-semibold mb-6 text-slate-900">Watch it extract insights</h3>
+                    <div class="step-icon text-5xl">📈</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Protocols -->
+    <section id="protocols" class="protocols py-20 bg-slate-50">
+        <div class="container">
+            <h2 class="section-title">FOR PROTOCOLS</h2>
+            <h3 class="section-heading">Visualize Your Protocol Ecosystem</h3>
+            <p class="section-subtitle">Connect web2 and web3 data, and show a graph of agents with their integrations</p>
+            
+            <div class="protocol-examples grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <div class="protocol-card bg-white p-10 rounded-2xl border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="protocol-header flex justify-between items-center mb-4">
+                        <h3 class="text-3xl font-bold text-slate-900">Apecoin</h3>
+                        <span class="protocol-badge bg-gradient-primary text-white px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">Ape Agent</span>
+                    </div>
+                    <p class="text-slate-500 mb-6 leading-relaxed">Ape Agent specializes in the Bored Ape ecosystem: BAYC NFTs, Apecoin, Apechain, and Banana.</p>
+                    <div class="protocol-actions flex gap-4 flex-wrap">
+                        <a href="#" class="btn btn-primary">Try now</a>
+                        <a href="#" class="btn btn-link">Watch Demo</a>
+                    </div>
+                </div>
+                
+                <div class="protocol-card bg-white p-10 rounded-2xl border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="protocol-header flex justify-between items-center mb-4">
+                        <h3 class="text-3xl font-bold text-slate-900">Uniswap</h3>
+                        <span class="protocol-badge bg-gradient-primary text-white px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">Uniswap Agent</span>
+                    </div>
+                    <p class="text-slate-500 mb-6 leading-relaxed">The Uniswap Agent delivers insights on its tech, use cases, trends, and updates.</p>
+                    <div class="protocol-actions flex gap-4 flex-wrap">
+                        <a href="#" class="btn btn-primary">Try now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Enterprise -->
+    <section id="enterprise" class="enterprise py-20 bg-white">
+        <div class="container">
+            <h2 class="section-title">FOR ENTERPRISE</h2>
+            <h3 class="section-heading">Build AI Solutions for Your Business</h3>
+            <p class="section-subtitle">Create your organization's AI agent, integrate company data, and extract actionable insights</p>
+            
+            <div class="enterprise-features grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="enterprise-feature text-center p-8">
+                    <div class="enterprise-icon text-6xl mb-6">🎯</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-slate-900">Custom AI Agents</h3>
+                    <p class="text-slate-500 leading-relaxed">Deploy specialized AI agents tailored to your industry, compliance requirements, and business processes.</p>
+                </div>
+                <div class="enterprise-feature text-center p-8">
+                    <div class="enterprise-icon text-6xl mb-6">🏢</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-slate-900">Enterprise Data Hub</h3>
+                    <p class="text-slate-500 leading-relaxed">Centralize all your data sources with enterprise-grade security, governance, and real-time processing.</p>
+                </div>
+                <div class="enterprise-feature text-center p-8">
+                    <div class="enterprise-icon text-6xl mb-6">💼</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-slate-900">Dedicated Support</h3>
+                    <p class="text-slate-500 leading-relaxed">Get priority support, custom training, and dedicated success management for your team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing py-20 bg-slate-50">
+        <div class="container">
+            <h2 class="section-title">Pricing</h2>
+            <p class="section-subtitle">Flexible options for individuals and teams. Enjoy unlimited integrations and access a premium offering tailored for web3's largest teams</p>
+            
+            <div class="pricing-grid grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-5xl mx-auto">
+                <div class="pricing-card bg-white p-10 rounded-2xl border-2 border-slate-200 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative">
+                    <div class="pricing-header mb-8 pb-6 border-b border-slate-200">
+                        <h3 class="text-3xl font-bold mb-2 text-slate-900">Invite Only</h3>
+                        <p class="text-slate-500">Exclusivity Meets Flexibility</p>
+                    </div>
+                    <div class="pricing-features mb-8">
+                        <p class="pricing-features-title font-semibold text-slate-900 mb-4 text-sm">Features (Access to Flow AI upon invitation)</p>
+                        <ul class="list-none">
+                            <li class="py-3 text-slate-500 border-b border-slate-200">✓ Exclusive Access</li>
+                            <li class="py-3 text-slate-500 border-b border-slate-200">✓ Community Data Exploration</li>
+                            <li class="py-3 text-slate-500 border-b border-slate-200">✓ Query Editor Access</li>
+                            <li class="py-3 text-slate-500 border-b border-slate-200">✓ Curated Insights</li>
+                            <li class="py-3 text-slate-500 border-b border-slate-200">✓ Web3 Data Exploration</li>
+                            <li class="py-3 text-slate-500">✓ Custom Dashboard Creation</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-secondary w-full">Follow for Updates</a>
+                </div>
+                
+                <div class="pricing-card featured bg-white p-10 rounded-2xl border-2 border-primary shadow-md hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative">
+                    <div class="pricing-badge absolute -top-3 right-8 bg-gradient-primary text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wide">Popular</div>
+                    <div class="pricing-header mb-8 pb-6 border-b border-slate-200">
+                        <h3 class="text-3xl font-bold mb-2 text-slate-900">Enterprise</h3>
+                        <p class="text-slate-500">Empower Your Organization at Scale</p>
+                    </div>
+                    <div class="pricing-features mb-8">
+                        <p class="pricing-features-title font-semibold text-slate-900 mb-4 text-sm">Features (Empower Your Organization at Scale)</p>
+                        <ul class="list-none">
+                            <li class="py-3 text-slate-500 border-b border-slate-200">✓ 30+ Web3 Integrations</li>
+                            <li class="py-3 text-slate-500 border-b border-slate-200">✓ 24/7 Priority Assistance</li>
+                            <li class="py-3 text-slate-500 border-b border-slate-200">✓ Robust Data Access</li>
+                            <li class="py-3 text-slate-500 border-b border-slate-200">✓ Custom Data Interactions</li>
+                            <li class="py-3 text-slate-500 border-b border-slate-200">✓ Tech Agnostic Solutions</li>
+                            <li class="py-3 text-slate-500">✓ Backup your Account</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary w-full">Book a Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faqs" class="faqs py-20 bg-white">
+        <div class="container">
+            <h2 class="section-title">FAQs</h2>
+            <div class="faq-list max-w-3xl mx-auto mt-12">
+                <div class="faq-item p-6 border-b border-slate-200 cursor-pointer hover:bg-slate-50 transition-all">
+                    <h3 class="text-lg font-semibold text-slate-900">Is there a free trial?</h3>
+                </div>
+                <div class="faq-item p-6 border-b border-slate-200 cursor-pointer hover:bg-slate-50 transition-all">
+                    <h3 class="text-lg font-semibold text-slate-900">Can I change my plan later?</h3>
+                </div>
+                <div class="faq-item p-6 border-b border-slate-200 cursor-pointer hover:bg-slate-50 transition-all">
+                    <h3 class="text-lg font-semibold text-slate-900">What is your cancellation policy?</h3>
+                </div>
+                <div class="faq-item p-6 border-b border-slate-200 cursor-pointer hover:bg-slate-50 transition-all">
+                    <h3 class="text-lg font-semibold text-slate-900">Can additional info be added to invoices?</h3>
+                </div>
+                <div class="faq-item p-6 cursor-pointer hover:bg-slate-50 transition-all">
+                    <h3 class="text-lg font-semibold text-slate-900">How does billing work?</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-20 bg-gradient-primary text-center text-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold mb-8">Create AI agents tailored to your needs</h2>
+            <div class="cta-buttons flex gap-4 justify-center flex-wrap">
+                <a href="#agents" class="btn bg-white text-primary hover:bg-slate-100">Explore Agents</a>
+                <a href="#agents" class="btn bg-transparent text-white border-2 border-white hover:bg-white hover:text-primary">Create your agent</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-slate-900 text-white py-12">
+        <div class="container">
+            <div class="footer-content grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="footer-section">
+                    <h3 class="text-xl font-semibold mb-4">Flow AI</h3>
+                    <p class="text-white/70 text-sm">© 2024 Flow AI. All rights reserved.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="list-none">
+                        <li class="mb-2"><a href="#" class="text-white/70 hover:text-white transition-colors text-sm">Community</a></li>
+                        <li class="mb-2"><a href="#" class="text-white/70 hover:text-white transition-colors text-sm">Terms of Service</a></li>
+                        <li class="mb-2"><a href="#" class="text-white/70 hover:text-white transition-colors text-sm">Brand</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="font-semibold mb-4">Social</h4>
+                    <ul class="list-none">
+                        <li class="mb-2"><a href="#" class="text-white/70 hover:text-white transition-colors text-sm">Twitter</a></li>
+                        <li class="mb-2"><a href="#" class="text-white/70 hover:text-white transition-colors text-sm">LinkedIn</a></li>
+                        <li class="mb-2"><a href="#" class="text-white/70 hover:text-white transition-colors text-sm">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
