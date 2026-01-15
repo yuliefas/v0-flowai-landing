@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack serve --mode development --open",
     "build": "webpack --mode production",
-    "build:dev": "webpack --mode development"
+    "build:dev": "webpack --mode development",
+    "build:gh-pages": "GITHUB_PAGES=true webpack --mode production"
   },
   "keywords": [
     "landing-page",
