@@ -8,7 +8,7 @@
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "build:gh-pages": "GITHUB_PAGES=true webpack --mode production",
-    "deploy": "pnpm run build && gh-pages -d dist"
+    "deploy": "GITHUB_PAGES=true pnpm run build && gh-pages -d dist"
   },
   "keywords": [
     "landing-page",

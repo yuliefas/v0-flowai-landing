@@ -8,9 +8,9 @@ module.exports = {
     filename: 'bundle.[contenthash].js',
     clean: true,
     // Untuk custom domain (flowai.xyz), gunakan '/'
-    // Untuk GitHub Pages subdomain (username.github.io/flowai-landing), gunakan '/flowai-landing/'
+    // Untuk GitHub Pages subdomain (username.github.io/v0-flowai-landing), gunakan '/v0-flowai-landing/'
     // Default: '/' untuk custom domain atau local development
-    publicPath: process.env.CUSTOM_DOMAIN === 'true' || !process.env.GITHUB_PAGES ? '/' : '/flowai-landing/',
+    publicPath: process.env.CUSTOM_DOMAIN === 'true' || !process.env.GITHUB_PAGES ? '/' : '/v0-flowai-landing/',
   },
   module: {
     rules: [
